@@ -1,0 +1,703 @@
+/* Header */
+
+.Header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.Header-top {
+    background-color: var(--color-one);
+    color: var(--color-two);
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .Header .Header-top {
+        font-size: 16px;
+    }
+}
+
+.Header .Header-main {
+    background-color: white;
+}
+
+.Header .Header-main .Inner-wrap {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-main .Inner-logo a {
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+}
+
+.Header-main .Inner-logo img {
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.Header-main .Inner-logo a span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.Header-main .Inner-menu {
+    margin-left: 30px;
+}
+
+.Header-main .Inner-menu ul {
+    display: flex;
+}
+
+.Header-main .Inner-menu ul li {
+    margin-left: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.Header-main .Inner-menu ul li a:hover {
+    color: rgb(40, 40, 152);
+}
+
+.Header-main .Inner-menu ul li a {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.Header-main .Inner-contact {
+    font-size: 18px;
+}
+
+.Header-main .Inner-social ul {
+    display: flex;
+}
+
+.Header-main .Inner-social ul li {
+    margin-left: 15px;
+    font-size: 26px;
+}
+
+.Header-main .Inner-social ul li a {
+    color: var(--color-one);
+}
+
+.Header-main .Inner-menu-mobi {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .Header-main .Inner-contact {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header-main .Inner-menu {
+        display: none;
+    }
+
+    .Header-main .Inner-contact {
+        display: none;
+    }
+
+    .Header-main .Inner-social {
+        display: none;
+    }
+
+    .Header-main .Inner-menu-mobi {
+        display: block;
+        font-size: 24px;
+        color: var(--color-one);
+    }
+}
+
+/* End Header */
+
+/* Buttons */
+
+.Inner-button {
+    background: var(--color-text);
+    color: white;
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 45px;
+    border: 2px solid var(--color-text);
+    display: inline-block;
+}
+
+.Button-1 {
+    background: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.Button-1:hover {
+    color: var(--color-text);
+    background: white;
+}
+
+.Button-2 {
+    background: var(--color-two);
+    border-color: var(--color-two);
+}
+
+.Button-2:hover {
+    color: var(--color-two);
+    background: white;
+}
+
+/* Section-one */
+
+.Section-one {
+    margin-top: 150px;
+}
+
+.Section-one .Inner-wrap {
+    display: flex;
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.Section-one .Inner-content {
+    width: 50%;
+}
+
+.Section-one .Inner-title {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: var(--color-one);
+}
+
+.Section-one .Inner-desc {
+    font-size: 22px;
+    color: var(--color-one);
+    margin-bottom: 40px;
+}
+
+.Section-one .Inner-list {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.Section-one .Inner-item {
+    width: 50%;
+    display: flex;
+    color: var(--color-text);
+    align-items: center;
+}
+
+.Section-one .Inner-item i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.Section-one .Inner-item span {
+    font-size: 20px;
+}
+
+.Section-one .Inner-image {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.Section-one .Inner-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-two);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    color: var(--color-one);
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+.Section-one .Inner-price span:nth-child(1) {
+    font-size: 22px;
+}
+
+.Section-one .Inner-price span:nth-child(2) {
+    font-size: 48px;
+}
+
+@media (max-width: 992px) {
+    .Section-one .Inner-content {
+        width: 100%;
+        order: 1;
+    }
+
+    .Section-one .Inner-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section-one .Inner-content {
+        text-align: center;
+    }
+
+    .Section-one .Inner-list {
+        margin-bottom: 0;
+    }
+
+    .Section-one .Inner-list .Inner-item {
+        width: 100%;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+}
+
+/* End Section-one */
+
+
+/* Section 2 */
+
+.Section-two {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.Section-two .Inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Section-two .Inner-box {
+    width: calc(100%/3 - 20px);
+    height: 100%;
+    aspect-ratio: 4/3;
+    /* Xét giá trị cho width rồi cho height bằng 100%, sau đó dùng aspect-ratio: 4/3; thì tỉ lệ width:height luôn là 4:3*/
+    position: relative;
+    overflow: hidden;
+}
+
+.Section-two .Inner-box:hover img{
+    transform: scale(1.1);
+}
+
+.Section-two .Inner-box img {
+    transition: all 0.6s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Section-two .Inner-box .Inner-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.Section-two .Inner-task {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 16px;
+    background-color: green;
+    width: 85px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+}
+.Section-two .Inner-title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Section-two .Inner-box:nth-child(1) .Inner-title {
+    margin-bottom: 40px;
+}
+
+.Section-two .Inner-box:nth-child(2) .Inner-title {
+    color: var(--color-one);
+}
+
+.Section-two .Inner-box:nth-child(3) .Inner-title {
+    color: var(--color-one);
+}
+
+.Section-two .Inner-sale {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--color-two);
+}
+
+.Section-two .Inner-new-price {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--color-two);
+}
+
+.Section-two .Inner-old-price{
+    font-size: 22px;
+    color: #BBBBBB;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .Section-two .Inner-box {
+        aspect-ratio: 1/1;
+    }
+}
+
+@media (max-width: 992px) {
+    .Section-two .Inner-box {
+        width: 100%;
+        margin-bottom: 40px;
+        aspect-ratio: 4/2;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section-two .Inner-box {
+        width: 100%;
+        margin-bottom: 40px;
+        aspect-ratio: 4/2;
+    }
+}
+
+@media (max-width: 576px){
+    .Section-two .Inner-box{
+        aspect-ratio: 1/1;
+    }
+}
+/* End Section 2 */
+
+/* Section-three */
+
+.Section-three .Inner-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.Section-three .Inner-title {
+    max-width: 630px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--color-one);
+}
+
+.Section-three p {
+    display: inline-block;
+    color: var(--color-text);
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.Section-three .Inner-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Section-three .Inner-item {
+    width: calc(100%/3);
+}
+
+.Section-three .Inner-item i {
+    color: var(--color-text);
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.Section-three .Inner-item .Inner-name {
+    font-size: 22px;
+    color: var(--color-one);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.Section-three .Inner-item .Inner-desc{
+    font-size: 17px;
+    color: var(--color-text);
+}
+
+@media (max-width: 1200px){
+    .Section-three .Inner-item {
+        width: calc(100%/3 - 100px);
+    }
+}
+
+@media (max-width: 998px) {
+    .Section-three .Inner-list {
+        flex-wrap: wrap;
+    }
+
+    .Section-three .Inner-item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .Section-three .Inner-item {
+        width: 100%;
+    }
+}
+/* End Section-three */
+
+/* Section-four */
+
+.Section-four {
+    background-color: white;
+}
+
+.Section-four .Inner-wrap {
+    display: flex;
+    padding: 80px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Section-four .Inner-content {
+    width: 50%;
+}
+
+.Section-four .Inner-title {
+    font-weight: 800;
+    font-size: 52px;
+    color: var(--color-one);
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.Section-four .Inner-desc {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--color-text);
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.Section-four .Inner-image {
+    width: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.Section-four .Inner-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px){
+    .Section-four .Inner-content {
+        width: 100%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Section-four .Inner-title {
+        max-width: 700px;
+    }
+
+    .Section-four .Inner-image {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+/* End Section-four */
+
+/* Section-five */
+.Section-five {
+    padding: 80px 0;
+}
+
+.Section-five .Inner-wrap {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 13/1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Section-five img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Section-five .Inner-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    color: white;
+}
+
+.Section-five .Inner-desc {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.Section-five .Inner-desc span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.Section-five .Inner-desc i{
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+    .Section-five .Inner-wrap {
+        aspect-ratio: 5/1;
+    } 
+
+    .Section-five .Inner-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Section-five .Inner-desc {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section-five .Inner-wrap {
+        aspect-ratio: 2/1;
+    }
+
+    .Section-five .Inner-desc i{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Section-five .Inner-desc span{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .Section-five .Inner-wrap {
+        aspect-ratio: 1.5/1;
+    }
+}
+/* End Section-five */
+
+/* Section-six */
+.Section-six {
+    background-color: white;
+}
+
+.Section-six .Inner-wrap {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section-six .Inner-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    color: var(--color-one);
+}
+
+.Section-six .Inner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Section-six .Inner-list .Inner-box {
+    width: calc(100%/5);
+    height: 400px;
+}
+
+.Section-six .Inner-box .Inner-content{
+    height: 40%;
+    border: 1px solid #EFEFEF;
+    border-top: none;
+    padding: 20px;
+}
+
+.Section-six .Inner-content .Inner-name {
+    color: var(--color-text);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.Section-six .Inner-content .Inner-price {
+    font-size: 22px;
+    color: var(--color-one);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.Section-six .Inner-content .Inner-star {
+    font-size: 12px;
+    color: var(--color-two);
+    font-weight: 600;
+}
+
+.Section-six .Inner-box img {
+    width: 100%;
+    height: 60%;
+    object-fit: fill;
+}
+
+@media (max-width: 992px){
+    .Section-six .Inner-list .Inner-box {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .Section-six .Inner-list .Inner-box {
+        width: 100%;
+    }
+}
+/* End Section-six*/
+
+/* Section-seven*/
+.Section-seven .Inner-wrap {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* End Section-seven*/

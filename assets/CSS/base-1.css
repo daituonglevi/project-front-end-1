@@ -1,0 +1,52 @@
+:root {
+    --color-one: #103178;
+    --color-two: #FEC700;
+    --color-three: #F1F2F6;
+    --color-text: #5B6C8F;
+
+    --font: "Inria Serif", serif;
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-three);
+    font-family: var(--font);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px){
+    .Container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px){
+    .Container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px){
+    .Container{
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px){
+    .Container{
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
